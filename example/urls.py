@@ -18,6 +18,6 @@ from django.urls import path
 from api import views
 
 urlpatterns = [
-    path('api/users', views.list_users),
-    path('api/forecast', views.forecast)
+    path('api/users', views.list_users, name='list-users'),
+    path('api/forecast', views.forecast, name='forecast')
 ]

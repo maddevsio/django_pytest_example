@@ -9,6 +9,9 @@ verify_ssl = true
 django = "*"
 requests = "*"
 django-environ = "*"
+pytest = "*"
+pytest-django = "*"
+tox = "==3.7.0"
 
 [requires]
 python_version = "3.8"

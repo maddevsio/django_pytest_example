@@ -1,0 +1,42 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: http://api.openweathermap.org/data/2.5/weather?q=Los+Angeles&apikey=
+  response:
+    body:
+      string: '{"coord":{"lon":-118.24,"lat":34.05},"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"base":"stations","main":{"temp":284.43,"pressure":1020,"humidity":62,"temp_min":279.82,"temp_max":287.59},"visibility":16093,"wind":{"speed":0.86,"deg":228},"clouds":{"all":1},"dt":1575366750,"sys":{"type":1,"id":3578,"country":"US","sunrise":1575384130,"sunset":1575420222},"timezone":-28800,"id":5368361,"name":"Los
+        Angeles","cod":200}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '452'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 03 Dec 2019 09:52:30 GMT
+      Server:
+      - openresty
+      X-Cache-Key:
+      - /data/2.5/weather?apikey=
+    status:
+      code: 200
+      message: OK
+version: 1

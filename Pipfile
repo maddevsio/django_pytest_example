@@ -12,6 +12,7 @@ django-environ = "*"
 pytest = "*"
 pytest-django = "*"
 tox = "==3.7.0"
+pytest-vcr = "*"
 
 [requires]
 python_version = "3.8"

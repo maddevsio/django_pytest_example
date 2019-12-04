@@ -3,15 +3,15 @@ import requests
 from django.http import JsonResponse
 from django.conf import settings
 from django.contrib.auth.models import User
-from .forms import ForecastForm
+from api.forms import ForecastForm
 
-def list_users(request):
+def fetch_users(request):
     return JsonResponse({"users": [{
         "username": u.username, "first_name": u.first_name,
         "last_name": u.last_name, "id": u.pk} for u in User.objects.all()]})
 
 
-def forecast(request):
+def fetch_forecast(request):
     form = ForecastForm(request.GET or None)
     if form.is_valid():
         r = requests.get(
